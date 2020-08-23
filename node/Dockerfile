@@ -13,4 +13,4 @@ RUN     apt-get update -yq &&\
 
 RUN     git clone https://github.com/yuomii/SafeShare.git
 
-CMD     mvn -f SafeShare -pl safeshare-abci-app -am spring-boot:run -Dspring-boot.run.arguments=--server.port=${APP_PORT}
+CMD     mvn -f SafeShare -pl safeshare-abci-app -am spring-boot:run

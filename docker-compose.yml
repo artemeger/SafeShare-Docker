@@ -32,8 +32,6 @@ services:
     - 26658
     build:
       context: node
-      args:
-        APP_PORT: 9100
     volumes:
       -  abciapp-volume0
     networks:
@@ -64,8 +62,6 @@ services:
       - 26658
     build:
       context: node
-      args:
-        APP_PORT: 9100
     volumes:
       - abciapp-volume1
     networks:
@@ -96,8 +92,6 @@ services:
       - 26658
     build:
       context: node
-      args:
-        APP_PORT: 9100
     volumes:
       - abciapp-volume2
     networks:
